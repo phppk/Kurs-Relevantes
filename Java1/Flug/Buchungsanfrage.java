@@ -9,4 +9,8 @@ public class Buchungsanfrage {
         this.passagier = passagier;
         this.gewünschteSitze = gewünschteSitze;
     }
+    public String toString() {
+        return "Buchungsanfrage für:" +
+                "Flug" + flug + "Passagier" + passagier;
+    }
 }

@@ -14,7 +14,10 @@ public class flugmain {
         flugsystem.buchungHinzufuegen(anfrage);
         flugsystem.buchungsAnfrage(flugsystem.anfragenListe());
         List<Buchungsanfrage> flugList = flugsystem.anfragenListe();
-        flugList.stream().forEach(System.out::println);
+        System.out.println(flugList.toString());
+        flugList.stream()
+        .forEach(item -> System.out.println(item));
+        //irgendwas mit to string keine ahnung wie man das printed. Nachfragen pls
 
 
     }
